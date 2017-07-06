@@ -1,0 +1,5 @@
+[requires]
+Chat/0.1@diego/testing
+
+[generators]
+cmake
