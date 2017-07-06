@@ -4,9 +4,9 @@
 
 void chat(){
     #ifdef NDEBUG
-    std::cout << "Chat Release12asdasd3!" <<std::endl;;
+    std::cout << "Chat Release!" <<std::endl;;
     #else
-    std::cout << "Chat Debug123!" <<std::endl;
+    std::cout << "Chat Debug!" <<std::endl;
     #endif
     hello();
 }
