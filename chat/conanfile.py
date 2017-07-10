@@ -11,7 +11,6 @@ class ChatConan(ConanFile):
 
     def build(self):
         cmake = CMake(self)
-        cmake.definitions["CMAKE_INSTALL_PREFIX"] = self.package_folder
         cmake.configure(source_dir="src")
         cmake.build()
 
