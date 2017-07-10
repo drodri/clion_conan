@@ -2,3 +2,5 @@ build/
 *.pyc
 .idea/
 cmake-build-*/
+conanbuildinfo.cmake
+conaninfo.txt
