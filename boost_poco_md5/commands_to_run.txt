@@ -1,0 +1,5 @@
+conan install .. -s compiler=gcc -s compiler.version=7.3 -s compiler.libcxx=libstdc++11 --build=missing
+cmake ..
+make
+
+#output will be in the ./cmake-build-debug/bin/ folder
