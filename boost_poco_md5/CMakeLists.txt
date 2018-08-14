@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 project(BoostPoco)
-
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup()
-
-add_executable(demo demo.cpp)
-target_link_libraries(demo ${CONAN_LIBS})
+add_executable(BoostPoco demo.cpp)
+find_package(Boost 1.64.0 REQUIRED)
+find_package(Poco 1.7.8 REQUIRED)
+target_link_libraries(BoostPoco Poco::Poco Boost::Boost )

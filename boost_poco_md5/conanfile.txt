@@ -3,7 +3,8 @@ Poco/1.7.8p3@pocoproject/stable
 Boost/1.64.0@conan/stable
 
 [generators]
-cmake
+cmake_find_package
+cmake_paths
 
 [options]
 Boost:shared=False
