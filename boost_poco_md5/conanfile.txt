@@ -4,7 +4,6 @@ Boost/1.64.0@conan/stable
 
 [generators]
 cmake_find_package
-cmake_paths
 
 [options]
 Boost:shared=False

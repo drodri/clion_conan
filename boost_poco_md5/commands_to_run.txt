@@ -7,7 +7,6 @@ Boost/1.64.0@conan/stable
 
 [generators]
 cmake_find_package
-cmake_paths
 
 [options]
 Boost:shared=False
@@ -16,7 +15,7 @@ Poco:shared=False
 
 #############################################
 conan install .. -s compiler=gcc -s compiler.version=7.3 -s compiler.libcxx=libstdc++11 --build=missing
-cmake .. -DCMAKE_TOOLCHAIN_FILE=./conan_paths.cmake #### OR YOU CAN SET IT IN YOUR COMPILER. IT USES THIS FILE ON THE FIRST BUILD ####
+cmake ..
 make
 #############################################
 

@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(BoostPoco)
+set(CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR})
+message("${CMAKE_BINARY_DIR}")
 add_executable(BoostPoco demo.cpp)
 find_package(Boost 1.64.0 REQUIRED)
 find_package(Poco 1.7.8 REQUIRED)
